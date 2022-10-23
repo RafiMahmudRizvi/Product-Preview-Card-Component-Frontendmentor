@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- ICON -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/pencil.png"
+    />
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- MAIN STYLE -->
+    <link rel="stylesheet" href="style.css" />
+    <title>Product preview card component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      html {
+        font-family: "Montserrat", sans-serif;
+      }
+      h1,
+      h2 {
+        font-family: "Fraunces", serif;
+      }
+    </style>
+  </head>
+  <body
+    class="tw-relative tw-bg-cream-color tw-w-screen tw-h-screen tw-flex tw-items-center tw-justify-center tw-p-5"
+  >
+    <!-- MAIN CONTAINER -->
+    <main
+      class="tw-bg-white-color tw-h-fit tw-w-fit tw-max-w-[345px] tw-flex tw-flex-col tw-rounded-xl lg:tw-flex-row lg:tw-max-w-[800px]"
+    >
+      <!-- IMAGE MOBILE -->
+      <div class="tw-flex-1">
+        <img
+          class="tw-rounded-t-xl lg:tw-hidden"
+          src="/images/image-product-mobile.jpg"
+          alt="image-product-mobile"
+        />
+        <img
+          class="tw-hidden lg:tw-block tw-max-w-full tw-rounded-tl-xl tw-rounded-bl-xl"
+          src="/images/image-product-desktop.jpg"
+          alt="image-product-desktop"
+        />
+      </div>
+      <!-- TEXT -->
+      <div
+        class="tw-flex-1 tw-p-5 lg:tw-flex lg:tw-items-center lg:tw-justify-center"
+      >
+        <div class="tw-max-w-[300px] tw-h-full">
+          <span
+            class="tw-uppercase tw-font-thin tw-tracking-[4px] tw-text-xs tw-text-dark-grayish-blue lg:tw-text-sm lg:tw-tracking-[5px]"
+            >perfume</span
+          >
+          <h1
+            class="tw-capitalize tw-text-3xl tw-my-2 tw-text-very-dark-blue lg:tw-text-[2.8rem] lg:tw-leading-10 lg:tw-my-4"
+          >
+            gabrielle essence eau de parfum
+          </h1>
+          <article
+            class="tw-text-sm tw-text-dark-grayish-blue tw-leading-6 tw-mb-4 lg:tw-text-[18px] lg:tw-leading-8 lg:tw-mb-6"
+          >
+            A floral, solar and voluptuous interpretation composed by Olivier
+            Polge, Perfumer-Creator for the House of CHANEL.
+          </article>
+          <div class="tw-flex tw-items-center tw-gap-3 tw-mb-3 lg:tw-mb-12">
+            <h2 class="tw-text-3xl tw-text-dark-cyan lg:tw-text-[2.5rem]">
+              $149.99
+            </h2>
+            <span
+              class="tw-text-sm tw-text-dark-grayish-blue tw-line-through lg:tw-text-base"
+              >$169.99</span
+            >
+          </div>
+          <button
+            class="tw-bg-dark-cyan tw-w-full tw-text-white-color tw-flex tw-items-center tw-justify-center tw-py-4 tw-rounded-lg"
+          >
+            <img class="tw-mr-2" src="./images/icon-cart.svg" alt="" />
+            <span class="tw-font-[600] tw-text-sm"> Add to Cart </span>
+          </button>
+        </div>
+      </div>
+    </main>
+    <!-- FOOTER TEXT -->
+    <div
+      class="tw-absolute tw-left-5 tw-bottom-5 tw-font-thin tw-text-xs tw-text-gray-500"
+    >
+      Challenge by
+      <a
+        class="tw-text-gray-600 hover:tw-text-gray-700"
+        href="https://www.frontendmentor.io?ref=challenge"
+        target="_blank"
+        >Frontend Mentor</a
+      >. Coded by
+      <a
+        class="tw-text-gray-600 tw-font-semibold hover:tw-text-gray-700 hover:tw-underline"
+        href=""
+        >Rafi Mahmud Rizvi</a
+      >.
+    </div>
+  </body>
+</html>
